@@ -1,8 +1,114 @@
-  <nav class="nav">
-    <a href="#profile">Profile</a>
-    <a href="#research">Research</a>
-    <a href="#cv">My CV</a>
-    <a href="#github">GitHub</a>
-  </nav>
-</div>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Srivathsan P Sundar</title>
+  <meta name="description" content="Quantum algorithms researcher — portfolio, research, CV, and GitHub repositories." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="container">
+      <div class="brand">
+        <h1>Srivathsan P Sundar</h1>
+        <p class="subtitle">Quantum algorithms • Computational chemistry • Materials science</p>
+      </div>
+
+      <nav class="nav">
+        <a href="#profile">Profile</a>
+        <a href="#research">Research</a>
+        <a href="#cv">My CV</a>
+        <a href="#github">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- PROFILE -->
+    <section id="profile" class="card">
+      <h2>Profile</h2>
+      <p>
+        I’m a quantum algorithms researcher with experience developing and benchmarking methods for ground- and excited-state
+        molecular simulations (VQE, ADAPT-VQE, quantum subspace expansion), with interest in quantum machine learning.
+      </p>
+
+      <div class="links">
+        <a class="btn" href="https://github.com/srivathsanps-quantum" target="_blank" rel="noreferrer">GitHub Profile</a>
+        <a class="btn" href="SrivathsanPSCV.pdf" target="_blank" rel="noreferrer">Open CV (PDF)</a>
+        <!-- Optional: add LinkedIn link if you want -->
+      </div>
+    </section>
+
+    <!-- RESEARCH -->
+    <section id="research" class="card">
+      <h2>Research</h2>
+
+      <div class="grid">
+        <div class="tile">
+          <h3>Quantum algorithms for chemistry</h3>
+          <p>
+            Developing and implementing variational quantum algorithms for molecular simulations, including ADAPT-VQE and
+            quantum subspace expansion; benchmarking sampling/statistical errors; and testing workflows on IBM Quantum hardware.
+          </p>
+        </div>
+
+        <div class="tile">
+          <h3>Scalable excited-state modeling</h3>
+          <p>
+            Applying subspace methods and related techniques toward accurately modeling challenging excited states where
+            classical approaches struggle.
+          </p>
+        </div>
+
+        <div class="tile">
+          <h3>Quantum machine learning (QML)</h3>
+          <p>
+            Building hybrid quantum–classical models (QNNs, quantum kernels / QSVM-style ideas) using PennyLane + TensorFlow,
+            with careful benchmarking and documentation.
+          </p>
+        </div>
+      </div>
+
+      <h3 class="mt">Selected publications</h3>
+      <ul class="list">
+        <li>Chemically decisive benchmarks on the path to quantum utility (arXiv preprint)</li>
+        <li>On the generalized eigenvalue problem in subspace-based excited state methods for quantum computers (arXiv preprint)</li>
+      </ul>
+    </section>
+
+    <!-- CV -->
+    <section id="cv" class="card">
+      <h2>My CV</h2>
+      <p>
+        Download or view my full CV:
+      </p>
+      <p>
+        <a class="btn" href="SrivathsanPSCV.pdf" target="_blank" rel="noreferrer">Download CV (PDF)</a>
+      </p>
+    </section>
+
+    <!-- GITHUB -->
+    <section id="github" class="card">
+      <h2>GitHub Repositories</h2>
+      <p class="muted">
+        Auto-loaded from GitHub (sorted by most recently updated).
+      </p>
+
+      <div id="repo-status" class="muted">Loading repositories…</div>
+      <div id="repo-list" class="repo-list"></div>
+    </section>
+
+    <footer class="footer muted">
+      <p>© <span id="year"></span> Srivathsan P Sundar • Hosted on GitHub Pages</p>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
 
